@@ -10,6 +10,11 @@ $output .= '<title>lars.is - watch later</title>';
 $output .= '<description>lars.is - watch later</description>';
 $output .= '<link>http://www.lars.is/offtube/</link>';
 $output .= '<copyright>No copyright</copyright>';
+$output .= '<image>';
+$output .= '<url>http://s.ytimg.com/yts/img/youtube_logo_stacked-vfl225ZTx.png</url>';
+$output .= '<title>W3Schools.com</title>';
+$output .= '<link>http://www.w3schools.com</link>';
+$output .= '</image>';
 
 
 $files = array();
