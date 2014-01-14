@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/html/youtube
-./youtube-dl :ytwatchlater --verbose -cit --netrc -f 22/18
+cd ~/html/offtube
+~/apps/youtube-dl :ytwatchlater --verbose -cit --netrc -f 22/18
 
 

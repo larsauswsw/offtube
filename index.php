@@ -8,7 +8,7 @@ $output = '<rss version="2.0">';
 $output .= '<channel>';
 $output .= '<title>lars.is - watch later</title>';
 $output .= '<description>lars.is - watch later</description>';
-$output .= '<link>http://www.lars.is/youtube/</link>';
+$output .= '<link>http://www.lars.is/offtube/</link>';
 $output .= '<copyright>No copyright</copyright>';
 
 
@@ -23,7 +23,7 @@ while(($file = readdir($dir)) !== false)
 
 	$output .= '<item>';
     $output .= '<title>'. htmlspecialchars($file) .'</title>';
-    $output .= '<enclosure url="http://lars.is/youtube/'.rawurlencode($file).'" length="'.filesize($file).'" type="'.mime_content_type($file).'"/>'; 
+    $output .= '<enclosure url="http://lars.is/offtube/'.rawurlencode($file).'" length="'.filesize($file).'" type="'.mime_content_type($file).'"/>'; 
     $output .= '<pubDate>'.date("F d Y H:i:s.", filectime($file)).'</pubDate>';
 	$output .= '</item> ';
 }
