@@ -22,8 +22,8 @@ while(($file = readdir($dir)) !== false)
 	}
 
 	$output .= '<item>';
-    $output .= '<title>'. $file .'</title>';
-    $output .= '<enclosure url="http://hundertneun.de/media/'.$file.'" length="'.filesize($file).'" type="'.mime_content_type($file).'"/>'; 
+    $output .= '<title>'. htmlspecialchars($file) .'</title>';
+    $output .= '<enclosure url="http://hundertneun.de/media/'.rawurlencode($file).'" length="'.filesize($file).'" type="'.mime_content_type($file).'"/>'; 
     $output .= '<pubDate>'.date("F d Y H:i:s.", filectime($file)).'</pubDate>';
 	$output .= '</item> ';
 }
