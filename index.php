@@ -17,7 +17,7 @@ $dir=opendir("./");
 
 while(($file = readdir($dir)) !== false)  
 {  
-	if($file == "index.php" || $file == "youtube-dl" || $file == "youtube.sh" || $file == ".htaccess" || $file == '.' || $file == '..' || is_dir($file) ) {
+	if($file == "index.php" || $file == "youtube-dl" || $file == "youtube.sh" || $file == ".htaccess" || $file == '.' || $file == '..' || is_dir($file) ||  strpos($file, ".part") !== false ) {
 		continue; 
 	}
 
